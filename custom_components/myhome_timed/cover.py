@@ -51,8 +51,8 @@ from .myhome_device import MyHOMEEntity
 from .gateway import MyHOMEGatewayHandler
 
 CONF_TIMED_SHUTTER = 'timed'
-CONF_TRAVELLING_TIME_DOWN = 'travel_time_down'
-CONF_TRAVELLING_TIME_UP = 'travel_time_up'
+CONF_TRAVELLING_TIME_DOWN = 'travelling_time_down'
+CONF_TRAVELLING_TIME_UP = 'travelling_time_up'
 DEFAULT_TRAVEL_TIME = 25
 
 MYHOME_SCHEMA = vol.Schema(
