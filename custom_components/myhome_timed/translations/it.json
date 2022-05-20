@@ -1,5 +1,5 @@
 {
-  "title": "MyHome",
+  "title": "MyHome Timed",
   "config": {
     "flow_title": "Gateway MyHome {name} ({host})",
     "step": {
