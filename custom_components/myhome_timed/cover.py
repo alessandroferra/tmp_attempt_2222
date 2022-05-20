@@ -1,6 +1,8 @@
 """Support for MyHome covers."""
 import voluptuous as vol
 
+import logging
+
 from datetime import timedelta
 
 from homeassistant.core import callback
@@ -26,6 +28,8 @@ from homeassistant.const import (
 
 import homeassistant.helpers.config_validation as cv
 from homeassistant.helpers.restore_state import RestoreEntity
+
+_LOGGER = logging.getLogger(__name__)
 
 from OWNd.message import (
     OWNAutomationEvent,
