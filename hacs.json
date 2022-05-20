@@ -1,7 +1,7 @@
 {
-  "name": "MyHome",
+  "name": "MyHome Timed",
   "zip_release": true,
-  "filename": "myhome.zip",
+  "filename": "myhome_timed.zip",
   "render_readme": true,
   "country": ["EN", "FR", "NL", "IT"],
   "domains": ["light", "switch", "cover", "climate", "binary_sensor", "sensor"],
