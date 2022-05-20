@@ -1,0 +1,75 @@
+{
+  "title": "MyHome",
+  "config": {
+    "flow_title": "Gateway MyHome {name} ({host})",
+    "step": {
+      "user": {
+        "title": "Scegli il tuo gateway \"MyHome\"",
+        "data": {
+          "host": "Indirizzo Ip"
+        }
+      },
+      "port": {
+        "title": "Porta del Gateway",
+        "description": "Inserisci la porta utilizzata per la comunicazione OpenWebNet con il gateway {name} {host}",
+        "data": {
+          "port": "Porta"
+        }
+      },
+      "password": {
+        "title": "Porta del Gateway",
+        "description": "Inserisci la password OpenWebNet per il gateway {name} {host}",
+        "data": {
+          "password": "Password"
+        }
+      },
+      "custom": {
+        "title": "Inserimento manuale gateway",
+        "description": "Compila con le impostazioni del tuo gateway",
+        "data": {
+          "address": "Indirizzo IP",
+          "port": "Porta",
+          "serialNumber": "Indirizzo MAC",
+          "modelName": "Tipo di gateway"
+        }
+      }
+    },
+    "error": {
+      "invalid_port": "Porta non valida",
+      "invalid_ip": "Indirizzo IP non valido",
+      "invalid_mac": "Indirizzo MAC non valido",
+      "invalid_password": "Password non valida",
+      "password_retry": "Il gateway non ha accettato la password, aspetta 60s prima di riprovare.",
+      "password_error": "Password non valida"
+    },
+    "abort": {
+      "discover_timeout": "Impossibile trovare il gateway MyHome",
+      "no_gateways": "Nessun gateway MyHome trovato",
+      "all_configured": "Tutti i gateway MyHome sono già configurati",
+      "unknown": "Si è verificato un errore sconosciuto",
+      "cannot_connect": "Impossibile connettersi al gateway",
+      "already_configured": "Questo gateway è già configurato",
+      "already_in_progress": "La configurazione di questo gateway è già in corso",
+      "reauth_successful": "Nuova password accettata"
+    }
+  },
+  "options": {
+    "step": {
+        "user": {
+          "title": "Opzioni MyHome",
+          "description": "Impostazioni di sistema avanzate",
+            "data": {
+                "address": "Indirizzo IP",
+                "password": "Password",
+                "command_worker_count": "Numero di sessioni di comando simultanee"
+            }
+        }
+    },
+    "error": {
+      "invalid_ip": "Indirizzo IP non valido",
+      "invalid_worker_count": "I workers devono essere compresi tra 1 e 10",
+      "invalid_password": "Password non valida",
+      "password_error": "Errore password"
+    }
+  }
+}

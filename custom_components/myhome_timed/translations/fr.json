@@ -1,0 +1,75 @@
+{
+  "title": "MyHome",
+  "config": {
+    "flow_title": "Serveur MyHome {name} ({host})",
+    "step": {
+      "user": {
+        "title": "Choisisez votre serveur \"MyHome\"",
+        "data": {
+          "host": "Adresse IP"
+        }
+      },
+      "port": {
+        "title": "Port du serveur",
+        "description": "Entrez le port utilier pour les communications OpenWebNet avec le serveur {name} {host}",
+        "data": {
+          "port": "Port"
+        }
+      },
+      "password": {
+        "title": "Mot de passe du serveur",
+        "description": "Entrez le mot de passe OpenWebNet pour le serveur {name} {host}",
+        "data": {
+          "password": "Mot de passe"
+        }
+      },
+      "custom": {
+        "title": "Ajout manuel d'un serveur",
+        "description": "Remplissez les informations de votre serveur",
+        "data": {
+          "address": "Adresse IP",
+          "port": "Port",
+          "serialNumber": "Adresse MAC",
+          "modelName": "Type de serveur"
+        }
+      }
+    },
+    "error": {
+      "invalid_port": "Port invalide",
+      "invalid_ip": "Adresse IP invalide",
+      "invalid_mac": "Adresse MAC invalide",
+      "invalid_password": "Mot de passe invalide",
+      "password_retry": "Le serveur refuse la négociation, attendez 60s avant de réessayer.",
+      "password_error": "Mot de passe invalide"
+    },
+    "abort": {
+      "discover_timeout": "Impossible de découvrir des serveurs MyHome",
+      "no_gateways": "Aucun serveur MyHome découvert",
+      "all_configured": "Tous les serveurs MyHome sont déjà configurés",
+      "unknown": "Une erreur inconnue s'est produite",
+      "cannot_connect": "Connexion au serveur impossible",
+      "already_configured": "Ce serveur est déjà configuré",
+      "already_in_progress": "Le flux de configuration pour le pont est déjà en cours",
+      "reauth_successful": "Changement de mot de passe réussi"
+    }
+  },
+  "options": {
+    "step": {
+        "user": {
+          "title": "Options MyHome",
+          "description": "Parametres système avancés",
+            "data": {
+                "address": "Adresse IP",
+                "password": "Mot de passe",
+                "command_worker_count": "Nombre de session de commande simultanées"
+            }
+        }
+    },
+    "error": {
+      "invalid_ip": "Adresse IP invalide",
+      "invalid_worker_count": "Workers must be between 1 and 10",
+      "invalid_password": "Mot de passe invalide",
+      "password_error": "Mot de passe invalide"
+    }
+  }
+}
