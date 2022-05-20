@@ -305,13 +305,11 @@ class MyHOMECover(MyHOMEEntity, CoverEntity, RestoreEntity):
 
     async def async_set_cover_position(self, **kwargs):
         """Move the cover to a specific position."""
-        if ATTR_POSITION in kwargs and CONF_TIMED_SHUTTER not in kwargs:
+        if ATTR_POSITION in kwargs:
             position = kwargs[ATTR_POSITION]
             await self._gateway_handler.send(
                 OWNAutomationCommand.set_shutter_level(self._where, position)
             )
-        elif ATTR_POSITION in kwargs and CONF_TIMED_SHUTTER in kwargs:
-            position = kwargs[ATTR_POSITION]
             _LOGGER.debug('async_set_cover_position: %d', position)
             await self.set_position(position)
 
