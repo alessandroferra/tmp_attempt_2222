@@ -164,7 +164,7 @@ async def async_unload_entry(hass, config_entry):  # pylint: disable=unused-argu
         del hass.data[DOMAIN][CONF_ENTITIES][_cover]
 
 
-class MyHOMECover(MyHOMEEntity, CoverEntity):
+class MyHOMECover(MyHOMEEntity, CoverEntity, RestoreEntity):
 
     device_class = CoverDeviceClass.SHUTTER
 
